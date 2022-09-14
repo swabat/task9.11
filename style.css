@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    background: url('images/background.jpg') repeat;
+}
+
+.container {
+    position: relative;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.card {
+    position: relative;
+    border: 2px solid #909090;
+    border-radius: 0;
+    z-index: 1;
+}
+
+
+
+.card-header {
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #909090;
+}
+
+
+.card-body {
+    padding-bottom: 0px;
+}
+
+
+h3 {
+   margin: 10px;
+   text-align: left;
+   line-height: 30px;
+   border-bottom: 2px dotted #cdcdcd; 
+}
+
+h3 span {
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+#birthYearOutput {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.avatar {
+    width: 140px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    z-index: 40;
+    border: 10px solid white;
+}
+
+p {
+    margin: 0px 0px 5px;
+}
+
+
+.btn-generate, .btn-clear {
+     
+    margin: 14px 20px;
+    padding: 10px 30px 10px 35px;
+    position: relative;
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    font-size: 14px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-generate:focus, .btn-clear:focus {
+    outline: 0;
+ 
+}
+
+.btn-generate:before,  .btn-clear:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+
+.btn-generate:before {
+    background: #32D4E2;
+}
+
+.btn-clear:before {
+    background: #e65646;
+}
+
+.btn-generate:hover:before, .btn-clear:hover:before  {
+    transform: translate(2px, 2px); 
+}
+
+.license {
+
+    display: block;
+    text-align: center;
+}
